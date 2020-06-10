@@ -1,0 +1,19 @@
+<!DOCTYPE html> <!--Declaración del tipo de documento: HTML5-->
+<html> <!--Inicio del documento HTML-->
+<head> <!--Inicio de la cabecera -inf.sobre el doc.-->
+<meta charset=utf-8> <!--Config. de carácteres utilizada: UTF-8-->
+<title>GET&POST</title> <!--Título del documento -->
+</head> <!--Fin de la cabecera -->
+<body> <!--Inicio el cuerpo -contenido visible del doc.-->
+<h2>COMUNICACIONES HTTP</h2> <!--Texto de encabezado -título (h2)-->
+<form action='/led' method='get'> <!--Inicio del formulario.
+La URL de destino es "/led" = URL en la que se visualiza el formulario + led (-en el ejemplo- http://192.168.1.135/led).
+El método de envío es "GET". Si no se selecciona un método, por defecto será "GET".-->
+<input type='radio' name='led1' value='1' checked> ENCENDER LED 1 &emsp; <!--Primer valor seleccionable para led1: led1=1 -->
+<input type='radio' name='led1' value='0'>APAGAR LED 1<br> <!--Segundo valor seleccionable para led1: led1=0 -->
+<input type='radio' name='led2' value='1' checked> ENCENDER LED 2 &emsp; <!--Primer valor seleccionable para led2: led2=1 -->
+<input type='radio' name='led2' value='0'>APAGAR LED 2<br><br> <!--Segundo valor seleccionable para led2: led2=0 -->
+<input type='submit' value='ENVIAR'> <!--Envío de los dos pares nombre/valor seleccionados-->
+</form> <!--Fin del formulario-->
+</body> <!--Fin del cuerpo-->
+</html> <!--Fin del documento HTML-->
